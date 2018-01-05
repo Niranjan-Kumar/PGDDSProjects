@@ -1,5 +1,7 @@
+##################################################################################################
+#********************************** HR Analytics Case Study  ************************************#
+##################################################################################################
 
-# Assignment_ Group_Work_ Due December 24,2017.-HR_Analysis of Churn
 install.packages('MASS')
 install.packages('ggplot2')
 install.packages("car")
@@ -19,7 +21,6 @@ library(rio)
 library(tidyverse)
   
 
-setwd("~/Downloads/PA-I_Case_Study_HR_Analytics")
 #_______________________________________________________________________________________________
 # There are several files that we need to read in and we need the working directory
 # The files are employee_survey_data.csv,general_data.csv, in_time.csv, manager_survey_data.csv
@@ -61,11 +62,12 @@ table(general_data$Department)
 #         189                   2883                              1338''' 
 #---------------------------------------------------------------------------------------------
 
-table(general_data$Education)# well educated
+table(general_data$Education)
+# well educated
 #  1    2    3    4    5 
 # 510  846 1716 1194  144
 #---------------------------------------------------------------------------------------------
-table(general_data$EducationField)# Biomedical Company-Pharmaceutica-drug development and sales
+table(general_data$EducationField)# Biomedical Company-Pharmaceutical-drug development and sales
 #______________________________________________________________________________________________
 #Human Resources    Life Sciences        Marketing          Medical            Other 
 #      81             1818                  477              1392              246 
@@ -870,5 +872,5 @@ legend("topright",col=c("black","red"),lwd =c(2,2,2),c("Actual Model","Random Mo
 
 
 
-#######################################################################
+#############################################################################################################
 
